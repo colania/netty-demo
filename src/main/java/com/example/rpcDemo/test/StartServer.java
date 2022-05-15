@@ -1,5 +1,7 @@
 package com.example.rpcDemo.test;
 
+import com.example.rpcDemo.server.ServerSocket;
+
 /**
  * @description:
  * @author：wwei
@@ -7,4 +9,7 @@ package com.example.rpcDemo.test;
  */
 public class StartServer {
 
+    public static void main(String[] args) {
+        new Thread(new ServerSocket()).start();
+    }
 }
